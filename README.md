@@ -12,7 +12,13 @@ automated certificate renewal.
 
 ## Creating the SSL certificate
  - TLS/SSL works by having a public certificate and a private key
-    >
+
+
+# Notes - setting up server blocks
+```bash
+$sudo mkdir -p /var/www/your-domain/html #-p helps create necessary parent dir
+
+```
 
 
 
