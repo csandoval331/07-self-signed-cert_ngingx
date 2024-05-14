@@ -14,11 +14,13 @@ automated certificate renewal.
  - TLS/SSL works by having a public certificate and a private key
 
 
-# Notes - setting up server blocks
+# Notes - [setting up server blocks - step 5](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04#step-5-%E2%80%93-setting-up-server-blocks-recommended)
 ```bash
 $ sudo mkdir -p /var/www/your-domain/html
  * -p helps create necessary parent dir
 
+$ echo "your_domain" >> /etc/hosts
+ * I was able to create domain name "your_domain" by adding  it to hosts file
 ```
 
 
