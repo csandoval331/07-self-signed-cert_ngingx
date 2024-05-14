@@ -17,6 +17,6 @@ automated certificate renewal.
 
 
 # Links
-[Will be following along this Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-20-04-1)
-[Interesting - Setting up LEMP ((Linux, Nginx, MySQL, PHP) on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04)
+- [Will be following along this Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-20-04-1)
+- [Interesting - Setting up LEMP ((Linux, Nginx, MySQL, PHP) on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04)
 
