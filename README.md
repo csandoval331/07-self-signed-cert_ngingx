@@ -16,7 +16,7 @@ automated certificate renewal.
 
 # Notes - setting up server blocks
 ```bash
-$sudo mkdir -p /var/www/your-domain/html #-p helps create necessary parent dir
+$ sudo mkdir -p /var/www/your-domain/html #-p helps create necessary parent dir
 
 ```
 
