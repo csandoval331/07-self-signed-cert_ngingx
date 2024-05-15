@@ -12,6 +12,9 @@ automated certificate renewal.
 
 ## Creating the SSL certificate
  - TLS/SSL works by having a public certificate and a private key
+ - ```
+    sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+   ```
 
 
 # Notes - [setting up server blocks - step 5](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04#step-5-%E2%80%93-setting-up-server-blocks-recommended)
