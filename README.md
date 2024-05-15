@@ -12,8 +12,24 @@ automated certificate renewal.
 
 ## Creating the SSL certificate
  - TLS/SSL works by having a public certificate and a private key
- - ```
-    sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+ - ```bash
+    $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+    * req - specifies that we want to use X.509 certificate signing request (CSR)
+
+    **openssl output**
+    Country Name (2 letter code) [AU]:US
+    State or Province Name (full name) [Some-State]:Illinois
+    Locality Name (eg, city) []:Chicago
+    Organization Name (eg, company) [Internet Widgits Pty Ltd]:
+    Organizational Unit Name (eg, section) []:
+    Common Name (e.g. server FQDN or YOUR name) []:10.0.1.3
+    Email Address []:charlysandoval331@gmail.com
+   ```
+ - ```bash
+    $ sudo openssl dhparam -out /etc/nginx/dhparam.pem 4096
+    - will take a while to generate 769 Byte file
+    - file has less than 1000 characters
+    - why did it take so long to generate this file?
    ```
 
 
