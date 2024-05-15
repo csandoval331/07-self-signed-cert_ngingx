@@ -34,6 +34,8 @@ automated certificate renewal.
 
 
 # Notes - [setting up server blocks - step 5](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04#step-5-%E2%80%93-setting-up-server-blocks-recommended)
+- easily manage multiple websites using symbolic links to add sites to "nginx sites-enabled" directory
+- remove sites by removing symbolic link
 ```bash
 $ sudo mkdir -p /var/www/your-domain/html
  * -p helps create necessary parent dir
@@ -46,5 +48,7 @@ $ echo "your_domain" >> /etc/hosts
 
 # Links
 - [Will be following along this Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-20-04-1)
+- [Cipherlist.eu is a useful resource for understanding encryption settings](https://cipherlist.eu/)
+- [ read up on HTTP Strict Transport Security, specifically about “preload” functionality.](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
 - [Interesting - Setting up LEMP ((Linux, Nginx, MySQL, PHP) on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04)
 
